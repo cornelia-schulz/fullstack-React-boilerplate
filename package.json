@@ -30,9 +30,10 @@
     "react-router-dom": "^4.3.1",
     "sqlite3": "^4.0.1",
     "superagent": "^3.8.3",
-    "webpack": "^3.12"
+    "webpack": "^4.12.1"
   },
   "devDependencies": {
-    "nodemon": "^1.17.5"
+    "nodemon": "^1.17.5",
+    "webpack-cli": "^3.0.8"
   }
 }
