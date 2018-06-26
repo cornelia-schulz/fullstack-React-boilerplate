@@ -4,7 +4,10 @@ const db = knex(config)
 
 module.exports = {
   getAll,
-  getOne
+  getOne,
+  createNew,
+  updateOne,
+  deleteOne
 }
 
 function getAll() {
@@ -18,3 +21,18 @@ function getOne(id) {
   .select()
 }
 
+function createNew(newCat){
+  return db('cats')
+  .insert(newCat)
+}
+
+function updateOne(updatedCat){
+  return db('cats')
+  .update(updatedCat)
+}
+
+function deleteOne(id){
+  return db('cats')
+  .where('id', id)
+  .delete()
+}
